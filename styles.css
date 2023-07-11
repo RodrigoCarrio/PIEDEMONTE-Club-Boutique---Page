@@ -1,0 +1,294 @@
+@font-face {
+    font-family: Guthen Bloots;
+    src: url("/Fuentes_tipograficas/Guthen\ Bloots\ Personal\ Use.ttf");
+}
+
+@font-face {
+    font-family: Oswald-Heavy;
+    src: url("/Fuentes_tipograficas/Oswald-Heavy.ttf");
+}
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url("/Fuentes_tipograficas/Oswald-Light.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: #999999;
+}
+
+
+
+/* Estilos aplicados del contenedor */
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_info {    
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.container_title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    border: 2px solid black;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.container_items {
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.container_items-list {
+    text-align: center;
+}
+
+.hola {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #999999;
+    border: 2px solid black;
+    line-height: 1.1;
+    margin-bottom: 1px;
+    transition: all 0.4s ease-out;
+    box-shadow: 8px 8px 34px -8px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.active, .hola:hover, .accordion:hover {
+    background-color: #426ef0;
+}   
+
+.accordion:after {
+    content: "\002B";
+    color: black;    
+    float: right;
+    margin-left: 0.5rem;
+}
+
+.active::after {
+    content: "\2212";
+}
+
+.accordion-content {
+    padding: 0 1rem;
+    background-color: #222;
+    color: #aaa;
+    transition: 0.4s ease-out;
+}
+
+.accordion-content h1 {
+    margin: 1rem 0;
+    cursor: pointer;
+
+}
+
+.container_hide {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    color: #fff;
+    background-color: black;
+}
+
+/* Estilos aplicados para el contenedor oculto OTROS */
+.info_promos, .info_horarios-club {
+    background-color: #518338;
+}
+
+.container_hide-promos {
+    display: grid;
+    grid-template-columns: 25% 45% auto;
+    
+}
+
+.container_hide-info-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.container_hide-info {
+    padding: 10px;
+}
+
+.container_hide-info-list {
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+
+.imagen_container{    
+    display: flex;
+    justify-content: end;
+}
+
+.container_hide-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald-Heavy";
+    font-size: 25px;
+    padding: 0 100px;
+}
+
+.title_promo {
+    text-align: center;
+    font-family: "Guthen Bloots";
+    font-size: 80px;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+}
+
+.imagen_logo {
+    height: 70px;
+    width: auto;
+}
+
+.container_hide-promos > .container_hide-info:first-child {
+    margin-left: 100px;
+    border-left: 5px solid #fff;
+}
+
+.container_hide-promos > .container_hide-info:nth-child(2) {
+    border-right: 5px solid #fff;
+}
+
+/* Estilos aplicados para para el contenedor oculto CLUB */
+.info_horarios-club .container_hide-info h1 {
+    font-family: 'Oswald';
+    font-size: 40px;
+    
+}
+
+.info_horarios-club .container_hide-info p{
+    font-family: 'Oswald-Light';
+    font-size: 40px;    
+}
+
+.container_hide > .container_hide-info:nth-child(n+2) {
+    text-align: center;
+}
+
+/* Estilos aplicados para para el contenedor oculto CLASES */
+.clases_title {
+    font-family: "Guthen Bloots";
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 0.9;
+    
+}
+
+.clases_name {
+    font-family: 'Oswald';
+    font-size: 40px;
+}
+
+.info_horarios-clases {
+    background-color: #D68A3E;
+    
+}
+
+.container_hide-info-clases {
+    display: flex;
+    padding-left: 100px;
+}
+
+.container_hide-info-clases-list {
+    width: 50%;
+}
+
+.info_horarios-clases .container_hide-info-clases p {
+    font-family: 'Oswald-Light';
+    font-size: 40px;
+}
+
+/* Estilos aplicados para para el contenedor oculto PRECIOS MULTIMES LIBRE */
+.multimes__prices {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    gap: 10px;
+}
+
+.multimes__content {
+    text-align: center;
+}
+
+.multimes__title {
+    font-family: "Guthen Bloots";
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 0.9;
+}
+
+.multimes__paragraph{
+    color: #999999;
+    font-family: 'Oswald-Light';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+.multimes__info {
+    border-left: 5px solid #D68A3E;
+    padding-left: 10px;
+
+}
+
+.multimes__info-title {
+    font-family: 'Oswald';
+    font-size: 35px;
+    text-decoration: 3px underline #D68A3E;
+}
+
+.multimes__info-list {
+    font-family: 'Oswald-Light';
+    font-size: 30px;
+    list-style: none;
+}
+
+
+@media (max-width: 768px) {
+    /* Estilos aplicados para dispositivos con un ancho máximo de 768px */
+    .container_title {
+        font-size: 50px;
+    }
+
+    .hola {
+        font-size: 30px;
+    }
+  }

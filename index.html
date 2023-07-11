@@ -11,387 +11,372 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <section>
-            <div class="container">
+    <main class="container">
 
-                <!--Grupo Promociones-->
-                <div class="container_info">
-                    <h2 class="container_title">Promos<br> del mes</h2>                    
-                    <div class="container_items">
-                        <ul class="container_items-list">
-                            <li class="hola "><a href="https://www.getnet.com.ar/promociones-para-tus-clientes" target="_blank">Santander</a></li>
-                            <li class="hola " onclick="mostrarInformacionOculta('info_promos')">Otros</li>
+        <!--Grupo Promociones-->
+        <div class="card">
+            <h2 class="card__title">Promos<br> del mes</h2>
+                <ul class="card__items">
+                    <li><a class="card__item" href="https://www.getnet.com.ar/promociones-para-tus-clientes" target="_blank">Santander</a></li>
+                    <li class="card__item" onclick="mostrarInformacionOculta('info_promos')">Otros</li>
+                </ul>
+
+            <!--Grupo Oculto. Otros-->
+            <div class="container_hide info_promos" style="display: none;">
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="container_hide-info">
+                    <h1 class="title_promo">Promos</h1>
+                </div>
+
+                <div class="container_hide-title">
+                    <h1 class="container_hide-title-info">No Acumulables</h1>
+                    <h1 class="container_hide-title-info">Acumulables</h1>
+                </div>
+
+                <div class="container_hide-promos">
+                    <div class="container_hide-info promo-acumulable">
+                        <h2 class="container_hide-info-title">Grupo</h2>
+                        <ul class="container_hide-info-list">
+                            <li>2 personas -5%</li>
+                            <li>+3 personas -10%</li>
                         </ul>
                     </div>
-
-                    <!--Grupo Oculto. Otros-->
-                    <div class="container_hide info_promos" style="display: none;">
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="container_hide-info">
-                            <h1 class="title_promo">Promos</h1>
-                        </div>
-
-                        <div class="container_hide-title">
-                            <h1 class="container_hide-title-info">No Acumulables</h1>
-                            <h1 class="container_hide-title-info">Acumulables</h1>
-                        </div>
-
-                        <div class="container_hide-promos">
-                            <div class="container_hide-info promo-acumulable">
-                                <h2 class="container_hide-info-title">Grupo</h2>
-                                <ul class="container_hide-info-list">
-                                    <li>2 personas -5%</li>
-                                    <li>+3 personas -10%</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="container_hide-info promo-acumulable">
-                                <h2 class="container_hide-info-title">Constancia</h2>
-                                <ul class="container_hide-info-list">
-                                    <li>+6 meses -5%</li>
-                                    <li>+12 meses -10%</li>
-                                </ul>
-                            </div>
+                        
+                    <div class="container_hide-info promo-acumulable">
+                        <h2 class="container_hide-info-title">Constancia</h2>
+                        <ul class="container_hide-info-list">
+                            <li>+6 meses -5%</li>
+                            <li>+12 meses -10%</li>
+                        </ul>
+                    </div>
     
-                            <div class="container_hide-info">
-                                <h2 class="container_hide-info-title">Pago Contado</h2>
-                                <ul class="container_hide-info-list">
-                                    <li>Efectivo -5%</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Grupo Servicios-->
-                <div class="container_info">
-                    <h2 class="container_title">Servicios<br>para renovarte</h2>
-                    <div class="container_items">
-                        <ul class="container_items-list">
-                            <li class="hola ">Peluqueria</li>
-                            <li class="hola ">Nutricion</li>
-                            <li class="hola ">Cosmetologia y Cosmiatria</li>
+                    <div class="container_hide-info">
+                        <h2 class="container_hide-info-title">Pago Contado</h2>
+                        <ul class="container_hide-info-list">
+                            <li>Efectivo -5%</li>
                         </ul>
                     </div>
                 </div>
-                
-                <!--Grupo Horarios-->
-                <div class="container_info">
-                    <h2 class="container_title">Nuestros<br>Horarios</h2>
-                    <div class="container_items">
-                        <ul class="container_items-list">
-                            <li class="hola " onclick="mostrarInformacionOculta('info_horarios-club')">Club</li>
-                            <li class="hola " onclick="mostrarInformacionOculta('info_horarios-clases')">Clases</li>
-                        </ul>
-                    </div>
-
-                    <!--Grupo Oculto. Horarios Club-->
-                    <div class="container_hide info_horarios-club" style="display: none;">
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
+                <div class="button">
+                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                </div>
+            </div>
+        </div>
             
-                        <div class="container_hide-info">
-                            <h1>LUNES A VIERNES</h1>
-                            <p>de corrido</p>
-                            <p>07:00 a 22:00</p>
-                        </div>
-                        
-                        <div class="container_hide-info">
-                            <h1>SÁBADOS</h1>
-                            <p>por la mañana</p>
-                            <p>08:00 a 13:00</p>
-                        </div>
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+        <!--Grupo Servicios-->
+        <div class="card">
+            <h2 class="card__title">Servicios<br>para renovarte</h2>
+                <ul class="card__items">
+                    <li class="card__item ">Peluqueria</li>
+                    <li class="card__item ">Nutricion</li>
+                    <li class="card__item ">Cosmetologia y Cosmiatria</li>
+                </ul>
+        </div>
+            
+        <!--Grupo Horarios-->
+        <div class="card">
+            <h2 class="card__title">Nuestros<br>Horarios</h2>
+                <ul class="card__items">
+                    <li class="card__item " onclick="mostrarInformacionOculta('info_horarios-club')">Club</li>
+                    <li class="card__item " onclick="mostrarInformacionOculta('info_horarios-clases')">Clases</li>
+                </ul>
+
+            <!--Grupo Oculto. Horarios Club-->
+            <div class="container_hide info_horarios-club" style="display: none;">
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+        
+                <div class="container_hide-info">
+                    <h1>LUNES A VIERNES</h1>
+                    <p>de corrido</p>
+                    <p>07:00 a 22:00</p>
+                </div>
+                    
+                <div class="container_hide-info">
+                    <h1>SÁBADOS</h1>
+                    <p>por la mañana</p>
+                    <p>08:00 a 13:00</p>
+                </div>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+
+            <!--Grupo Oculto. Horarios Clase-->
+            <div class="container_hide info_horarios-clases" style="display: none;">                
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="container_hide-info-clases">
+                    <div class="container_hide-info-clases-list">                            
+                        <h1 class="clases_name">ENTRENAMIENTO</h1>
+                        <h1 class="clases_title">Funcional</h1>
+                        <p>Lunes, Miércoles, Viernes</p>
+                        <p>09:00 - 15:00 - 20:00</p>
                     </div>
 
-                    <!--Grupo Oculto. Horarios Clase-->
-                    <div class="container_hide info_horarios-clases" style="display: none;">                
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="container_hide-info-clases">
-                            <div class="container_hide-info-clases-list">                            
-                                <h1 class="clases_name">ENTRENAMIENTO</h1>
-                                <h1 class="clases_title">Funcional</h1>
-                                <p>Lunes, Miércoles, Viernes</p>
-                                <p>09:00 - 15:00 - 20:00</p>
-                            </div>
-
-                            <div class="container_hide-info-clases-list">
-                                <h1 class="clases_name">FUNCIONAL</h1>
-                                <h1 class="clases_title">Hiit</h1>
-                                <p>Lunes, Miércoles, Viernes</p>
-                                <p>21:00</p>
-                            </div>
-                        </div>
-                        
-                        <div class="container_hide-info-clases">
-                            <div class="container_hide-info-clases-list">
-                                <h1 class="clases_name">FUNCIONAL</h1>
-                                <h1 class="clases_title">Kids</h1>
-                                <p>Lunes, Miércoles, Viernes</p>
-                                <p>19:00</p>
-                            </div>
+                    <div class="container_hide-info-clases-list">
+                        <h1 class="clases_name">FUNCIONAL</h1>
+                        <h1 class="clases_title">Hiit</h1>
+                        <p>Lunes, Miércoles, Viernes</p>
+                        <p>21:00</p>
+                    </div>
+                </div>
+                    
+                <div class="container_hide-info-clases">
+                    <div class="container_hide-info-clases-list">
+                        <h1 class="clases_name">FUNCIONAL</h1>
+                        <h1 class="clases_title">Kids</h1>
+                        <p>Lunes, Miércoles, Viernes</p>
+                        <p>19:00</p>
+                    </div>
     
-                            <div class="container_hide-info-clases-list">
-                                <h1 class="clases_name">GAP</h1>
-                                <h1 class="clases_title">Gluteos, abs y piernas</h1>
-                                <p>Martes y Jueves</p>
-                                <p>08:00 - 14:00 - 19:30</p>
-                            </div>                  
-                        </div>
-
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                    </div>
-                </div>
-                
-                <!--Grupo Precios-->
-                <div class="container_info">
-                    <h2 class="container_title">Precios</h2>
-                    <div class="container_items">
-                        <ul class="container_items-list">
-                            <li class="hola accordion" onclick="mostrarInformacion('info_multimes')">Multimes</li>
-                            <!--Grupo Oculto. Multimes-->
-                            <div class="accordion-content info_multimes" style="display: none;">
-                                <h1 onclick="mostrarInformacionOculta('info_multimes-libre')">Multimes Libre</h1>
-                                <h1 onclick="mostrarInformacionOculta('info_multimes-estandar')">Multimes Estandar</h1>                                
-                            </div>
-
-                            <li class="hola accordion" onclick="mostrarInformacion('info_mensual')">Mensual</li>
-                            <!--Grupo Oculto. Mensual-->
-                            <div class="accordion-content info_mensual" style="display: none;">
-                                <h1 onclick="mostrarInformacionOculta('info_mensual-libre')">Mensual Libre</h1>
-                                <h1 onclick="mostrarInformacionOculta('info_mensual-estandar')">Mensual Estandar</h1>
-                            </div>
-                            
-                            <!--Acá iría el diario, semanal y quincenal-->
-                            <li class="hola" onclick="mostrarInformacionOculta('otros_precios')">Otros</li>
-
-                        </ul>                                           
-                    </div>
-
-                    <!--Grupo Oculto. Precios Multimes Libre-->
-                    <div class="container_hide info_multimes-libre" style="display: none;">                            
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="multimes__content">
-                            <h3 class="multimes__title">Multimes Libre</h3>
-                            <p class="multimes__paragraph">Aprovechá descuentos y congelá precios</p>  
-                        </div>
-
-                        <div class="container_hide-row multimes__prices">                             
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Trimestral</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Efectivo:<br>$25500.- ($8500) el mes.</li>
-                                    <li>3 Pagos:<br>$30000.- ($10000) el mes.</li>
-                                </ul>
-                            </div>
-                           
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Semestral</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Efectivo:<br>$45000.- ($7500) el mes.</li>
-                                    <li>3 Pagos:<br>$63000.- ($10500) el mes.</li>
-                                </ul>
-                            </div>                            
-                            
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Anual</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Efectivo:<br>$84000.- ($7000) el mes.</li>
-                                    <li>3 Pagos:<br>$138000.- ($11500) el mes.</li>
-                                </ul>
-                            </div>                              
-                        </div>
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                    </div>
-
-                    <!--Grupo Oculto. Precios Multimes Estandar-->
-                    <div class="container_hide info_multimes-estandar" style="display: none;">                            
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="multimes__content">                                  
-                            <h3 class="multimes__title">Multimes Estandar</h3>
-                            <p class="multimes__paragraph">Aprovechá descuentos y congelá precios</p>  
-                        </div>
-
-                        <div class="container_hide-row multimes__prices">                             
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Trimestral</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Efectivo:<br>$22185.- ($7395) el mes.</li>
-                                    <li>3 Pagos:<br>$26100.- ($8700) el mes.</li>
-                                </ul>
-                            </div>
-                           
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Semestral</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Efectivo:<br>$39150.- ($6525) el mes.</li>
-                                    <li>3 Pagos:<br>$54810.- ($9135) el mes.</li>
-                                </ul>
-                            </div>                            
-                            
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Anual</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Efectivo:<br>$73080.- ($6090) el mes.</li>
-                                    <li>3 Pagos:<br>$120060.- ($10005) el mes.</li>
-                                </ul>
-                            </div>                               
-                        </div>
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                    </div>
-
-                    <!--Grupo Oculto. Precios Mensual Estandar-->
-                    <div class="container_hide info_mensual-estandar" style="display: none;">                            
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="multimes__content">                                  
-                            <h3 class="multimes__title">Mensual Estandar</h3>
-                            <p class="multimes__paragraph">14 Clases al mes.</p>
-                            <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
-                        </div>
-
-                        <div class="container_hide-row multimes__prices">                             
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Si sos 1</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Lista: $8700.-</li>
-                                    <li>Efectivo: $8265.-</li>
-                                </ul>
-                            </div>
-                           
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Si son 2</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Lista: $8700.-</li>
-                                    <li>Efectivo: $7830.-</li>
-                                </ul>
-                            </div>                            
-                            
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Si son 3</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Lista: $8700.-</li>
-                                    <li>Efectivo: $7395.-</li>
-                                </ul>
-                            </div>                               
-                        </div>
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                    </div>
-
-                    <!--Grupo Oculto. Precios Mensual Libre-->
-                    <div class="container_hide info_mensual-libre" style="display: none;">                            
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="multimes__content">                                  
-                            <h3 class="multimes__title">Mensual Libre</h3>
-                            <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
-                        </div>
-
-                        <div class="container_hide-row multimes__prices">                             
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Si sos 1</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Lista: $10000.-</li>
-                                    <li>Efectivo: $9500.-</li>
-                                </ul>
-                            </div>
-                           
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Si son 2</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Lista: $10000.-</li>
-                                    <li>Efectivo: $9000.-</li>
-                                </ul>
-                            </div>                            
-                            
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Si son 3</h7>
-                                <ul class="multimes__info-list">
-                                    <li>Lista: $10000.-</li>
-                                    <li>Efectivo: $8500.-</li>
-                                </ul>
-                            </div>                               
-                        </div>
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                    </div>
-
-                    <!--Grupo Oculto. Precios OTROS -->
-                    <div class="container_hide otros_precios" style="display: none;">                            
-                        <div class="container_hide-info imagen_container">
-                            <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
-                        </div>
-
-                        <div class="multimes__content">                                  
-                            <h3 class="multimes__title">Otros Pases</h3>
-                            <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
-                        </div>
-
-                        <div class="container_hide-row multimes__prices">                             
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Pase Diario</h7>
-                                <ul class="multimes__info-list">
-                                    <li>$2000.-</li>
-                                </ul>
-                            </div>
-                           
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Pase Semanal</h7>
-                                <ul class="multimes__info-list">
-                                    <li>$3700.-</li>
-                                </ul>
-                            </div>                            
-                            
-                            <div class="multimes__info">
-                                <h7 class="multimes__info-title">Pase Quincenal</h7>
-                                <ul class="multimes__info-list">
-                                    <li>$6200.-</li>
-                                </ul>
-                            </div>                               
-                        </div>
-                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
-                    </div>
+                    <div class="container_hide-info-clases-list">
+                        <h1 class="clases_name">GAP</h1>
+                        <h1 class="clases_title">Gluteos, abs y piernas</h1>
+                        <p>Martes y Jueves</p>
+                        <p>08:00 - 14:00 - 19:30</p>
+                    </div>                  
                 </div>
 
-                <!--Grupo Codigos-->
-                <div class="container_info">
-                    <h2 class="container_title">QR</h2>
-                    <div class="container_items">
-                        <ul class="container_items-list">
-                            <li class="hola ">Mercado Pago</li>
-                            <li class="hola  ">Aplicacion Gimnasio</li>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+        </div>
+            
+        <!--Grupo Precios-->
+        <div class="card">
+            <h2 class="card__title">Precios</h2>
+                <ul class="card__items">
+                    <li class="card__item accordion" onclick="mostrarInformacion('info_multimes')">Multimes</li>
+                    <!--Grupo Oculto. Multimes-->
+                    <div class="accordion-content info_multimes" style="display: none;">
+                        <h1 onclick="mostrarInformacionOculta('info_multimes-libre')">Multimes Libre</h1>
+                        <h1 onclick="mostrarInformacionOculta('info_multimes-estandar')">Multimes Estandar</h1>                                
+                    </div>
+
+                    <li class="card__item accordion" onclick="mostrarInformacion('info_mensual')">Mensual</li>
+                    <!--Grupo Oculto. Mensual-->
+                    <div class="accordion-content info_mensual" style="display: none;">
+                        <h1 onclick="mostrarInformacionOculta('info_mensual-libre')">Mensual Libre</h1>
+                        <h1 onclick="mostrarInformacionOculta('info_mensual-estandar')">Mensual Estandar</h1>
+                    </div>
+                        
+                    <!--Acá iría el diario, semanal y quincenal-->
+                    <li class="card__item" onclick="mostrarInformacionOculta('otros_precios')">Otros</li>
+                </ul>
+
+            <!--Grupo Oculto. Precios Multimes Libre-->
+            <div class="container_hide info_multimes-libre" style="display: none;">                            
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="multimes__content">
+                    <h3 class="multimes__title">Multimes Libre</h3>
+                    <p class="multimes__paragraph">Aprovechá descuentos y congelá precios</p>  
+                </div>
+
+                <div class="container_hide-row multimes__prices">                             
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Trimestral</h7>
+                        <ul class="multimes__info-list">
+                            <li>Efectivo:<br>$25500.- ($8500) el mes.</li>
+                            <li>3 Pagos:<br>$30000.- ($10000) el mes.</li>
                         </ul>
                     </div>
+                       
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Semestral</h7>
+                        <ul class="multimes__info-list">
+                            <li>Efectivo:<br>$45000.- ($7500) el mes.</li>
+                            <li>3 Pagos:<br>$63000.- ($10500) el mes.</li>
+                        </ul>
+                    </div>                            
+                        
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Anual</h7>
+                        <ul class="multimes__info-list">
+                            <li>Efectivo:<br>$84000.- ($7000) el mes.</li>
+                            <li>3 Pagos:<br>$138000.- ($11500) el mes.</li>
+                        </ul>
+                    </div>                              
                 </div>
-            </div>    
-        </section>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+
+            <!--Grupo Oculto. Precios Multimes Estandar-->
+            <div class="container_hide info_multimes-estandar" style="display: none;">                            
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="multimes__content">                                  
+                    <h3 class="multimes__title">Multimes Estandar</h3>
+                    <p class="multimes__paragraph">Aprovechá descuentos y congelá precios</p>  
+                </div>
+
+                <div class="container_hide-row multimes__prices">                             
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Trimestral</h7>
+                        <ul class="multimes__info-list">
+                            <li>Efectivo:<br>$22185.- ($7395) el mes.</li>
+                            <li>3 Pagos:<br>$26100.- ($8700) el mes.</li>
+                        </ul>
+                    </div>
+                       
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Semestral</h7>
+                        <ul class="multimes__info-list">
+                            <li>Efectivo:<br>$39150.- ($6525) el mes.</li>
+                            <li>3 Pagos:<br>$54810.- ($9135) el mes.</li>
+                        </ul>
+                    </div>                            
+                        
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Anual</h7>
+                        <ul class="multimes__info-list">
+                            <li>Efectivo:<br>$73080.- ($6090) el mes.</li>
+                            <li>3 Pagos:<br>$120060.- ($10005) el mes.</li>
+                        </ul>
+                    </div>                               
+                </div>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+
+            <!--Grupo Oculto. Precios Mensual Estandar-->
+            <div class="container_hide info_mensual-estandar" style="display: none;">                            
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="multimes__content">                                  
+                    <h3 class="multimes__title">Mensual Estandar</h3>
+                    <p class="multimes__paragraph">14 Clases al mes.</p>
+                    <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
+                </div>
+
+                <div class="container_hide-row multimes__prices">                             
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Si sos 1</h7>
+                        <ul class="multimes__info-list">
+                            <li>Lista: $8700.-</li>
+                            <li>Efectivo: $8265.-</li>
+                        </ul>
+                    </div>
+                       
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Si son 2</h7>
+                        <ul class="multimes__info-list">
+                            <li>Lista: $8700.-</li>
+                            <li>Efectivo: $7830.-</li>
+                        </ul>
+                    </div>                            
+                        
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Si son 3</h7>
+                        <ul class="multimes__info-list">
+                            <li>Lista: $8700.-</li>
+                            <li>Efectivo: $7395.-</li>
+                        </ul>
+                    </div>                               
+                </div>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+
+            <!--Grupo Oculto. Precios Mensual Libre-->
+            <div class="container_hide info_mensual-libre" style="display: none;">                            
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="multimes__content">                                  
+                    <h3 class="multimes__title">Mensual Libre</h3>
+                    <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
+                </div>
+
+                <div class="container_hide-row multimes__prices">                             
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Si sos 1</h7>
+                        <ul class="multimes__info-list">
+                            <li>Lista: $10000.-</li>
+                            <li>Efectivo: $9500.-</li>
+                        </ul>
+                    </div>
+                       
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Si son 2</h7>
+                        <ul class="multimes__info-list">
+                            <li>Lista: $10000.-</li>
+                            <li>Efectivo: $9000.-</li>
+                        </ul>
+                    </div>                            
+                    
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Si son 3</h7>
+                        <ul class="multimes__info-list">
+                            <li>Lista: $10000.-</li>
+                            <li>Efectivo: $8500.-</li>
+                        </ul>
+                    </div>                               
+                </div>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+
+            <!--Grupo Oculto. Precios OTROS -->
+            <div class="container_hide otros_precios" style="display: none;">                            
+                <div class="container_hide-info imagen_container">
+                    <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                </div>
+
+                <div class="multimes__content">                                  
+                    <h3 class="multimes__title">Otros Pases</h3>
+                    <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
+                </div>
+
+                <div class="container_hide-row multimes__prices">                             
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Pase Diario</h7>
+                        <ul class="multimes__info-list">
+                            <li>$2000.-</li>
+                        </ul>
+                    </div>
+                       
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Pase Semanal</h7>
+                        <ul class="multimes__info-list">
+                            <li>$3700.-</li>
+                        </ul>
+                    </div>                            
+                    
+                    <div class="multimes__info">
+                        <h7 class="multimes__info-title">Pase Quincenal</h7>
+                        <ul class="multimes__info-list">
+                            <li>$6200.-</li>
+                        </ul>
+                    </div>                               
+                </div>
+                <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+            </div>
+        </div>
+
+        <!--Grupo Codigos-->
+        <div class="card">
+            <h2 class="card__title">QR</h2>
+                <ul class="card__items">
+                    <li class="card__item ">Mercado Pago</li>
+                    <li class="card__item  ">Aplicacion Gimnasio</li>
+                </ul>
+        </div>
     </main>
 
     <script>
-        var permitirClic = true;
+        let permitirClic = true;
         
         function mostrarInformacion(accordion, elemento) {
-            var containers = document.querySelectorAll(".accordion-content");
+            let containers = document.querySelectorAll(".accordion-content");
             containers.forEach(function(container) {
                 if (container.classList.contains(accordion)) {
                     if (container.style.display === "none" && permitirClic) {
@@ -418,7 +403,7 @@
             });
 
             // Desactivar los clics en todos los elementos de la lista
-            const listaItems = document.querySelectorAll('.hola');
+            const listaItems = document.querySelectorAll('.card__item');
             listaItems.forEach(item => {
                 item.style.pointerEvents = 'none';
             });
@@ -441,7 +426,7 @@
             });
             
             // Activar los clics en todos los elementos de la lista
-            const listaItems = document.querySelectorAll('.hola');
+            const listaItems = document.querySelectorAll('.card__item');
             listaItems.forEach(item => {
                 item.style.pointerEvents = 'auto';
             });

@@ -21,7 +21,8 @@
 }
 
 body {
-    background-color: orange;
+    background-color: #fce3c0;
+
 }
 
 a {
@@ -38,33 +39,33 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(1px, 1fr) 1fr;
     gap: 1rem;
-    border: 3px solid black;
     padding: 1rem;
     width: 100vw;
     height: 100vh;
 }
 
-.card {    
-    border: 3px solid black;
+.card {
     padding: 0 1rem 1rem;
     text-align: center;
     background-color: rgb(222, 144, 0);
+    box-shadow: 8px 8px 15px #518338;
+    border-radius: 10px;
 }
 
 .card__title {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 60px;
-    /* border: 2px solid black; */
-    line-height: 1.1;
+    line-height: 1;
+    margin-top: 10px;
 }
 
 .card__items {
     /* border: 2px solid black; */
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .8rem;
 }
 
 .card__item {
@@ -75,40 +76,49 @@ li {
     font-weight: 700;
     font-size: 40px;
     color: #cecece;
-    outline: 2px solid black;
-    padding: 2px 0;
+    padding: 8px 5px;
     line-height: 1.1;
     /* margin-bottom: 1px; */
     transition: all 0.4s ease-out;
-    /* box-shadow: 8px 8px 34px -8px rgba(0, 0, 0, 0.75); */
+    /* box-shadow: 0px 0px 10px rgb(255, 255, 255); */
+    border-radius: 5px;
+    background-color: #1f400ff2;
 }
 
 
-.active, .card__item:hover, .accordion:hover {
-    background-color: #426ef0;
-}   
+.card__item:hover, .accordion:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
 
 .accordion:after {
     content: "\002B";
-    color: black;    
+    color: #cecece;
     float: right;
     margin-right: 0.5rem;
 }
 
-.active::after {
-    content: "\2212";
-}
-
 .accordion-content {
     padding: 0 1rem;
-    background-color: #222;
-    color: #cecece;
+    color: rgba(0, 0, 0, 0.75);
     transition: 0.4s ease-out;
+    /*box-shadow: 0px 0px 20px 0 #fff; */
+    border-radius: 10px;
+    font-family: "Oswald-Light";
+    line-height: 1.9rem;
+    background-color: #fff;
+    gap: 10px;
+
 }
 
 .accordion-content h1 {
     margin: .75rem 0;
     cursor: pointer;
+    color: black;
+    transition: 1s ease-out;
+}
+
+.accordion-content h1:hover {
+    background-color: rgb(222, 144, 0);
 }
 
 .container_hide {
@@ -123,6 +133,15 @@ li {
     background-color: black;
 }
 
+.cerrar_boton {
+    background: none;
+    color: #fff;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 /* Estilos aplicados para el contenedor oculto OTROS */
 .info_promos, .info_horarios-club {
     background-color: #518338;
@@ -131,7 +150,7 @@ li {
 .container_hide-promos {
     display: grid;
     grid-template-columns: 25% 45% auto;
-    
+
 }
 
 .container_hide-info-title {
@@ -150,7 +169,7 @@ li {
 }
 
 
-.imagen_container{    
+.imagen_container {
     display: flex;
     justify-content: end;
 }
@@ -190,12 +209,12 @@ li {
 .info_horarios-club .container_hide-info h1 {
     font-family: 'Oswald';
     font-size: 40px;
-    
+
 }
 
-.info_horarios-club .container_hide-info p{
+.info_horarios-club .container_hide-info p {
     font-family: 'Oswald-Light';
-    font-size: 40px;    
+    font-size: 40px;
 }
 
 .container_hide > .container_hide-info:nth-child(n+2) {
@@ -209,7 +228,7 @@ li {
     font-weight: 600;
     letter-spacing: 1.2px;
     line-height: 0.9;
-    
+
 }
 
 .clases_name {
@@ -219,7 +238,7 @@ li {
 
 .info_horarios-clases {
     background-color: #D68A3E;
-    
+
 }
 
 .container_hide-info-clases {
@@ -256,7 +275,7 @@ li {
     line-height: 0.9;
 }
 
-.multimes__paragraph{
+.multimes__paragraph {
     color: #999999;
     font-family: 'Oswald-Light';
     font-size: 50px;
@@ -283,7 +302,7 @@ li {
 
 
 @media (max-width: 768px) {
-    /* Estilos aplicados para dispositivos con un ancho máximo de 768px */
+    /* Estilos aplicados para dispositivos con un ancho mÃ¡ximo de 768px */
     .card__title {
         font-size: 50px;
     }
@@ -291,4 +310,4 @@ li {
     .card__item {
         font-size: 30px;
     }
-  }
+}

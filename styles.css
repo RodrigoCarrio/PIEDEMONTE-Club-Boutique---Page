@@ -35,9 +35,9 @@ li {
 
 /* Estilos aplicados del contenedor */
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(1px, 1fr) 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
     width: 100vw;
@@ -45,11 +45,15 @@ li {
 }
 
 .card {
+    flex: 1 1 320px;
     padding: 0 1rem 1rem;
     text-align: center;
     background-color: rgb(222, 144, 0);
     box-shadow: 8px 8px 15px #518338;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .card__title {
@@ -57,15 +61,15 @@ li {
     font-weight: 600;
     font-size: 60px;
     line-height: 1;
-    margin-top: 10px;
+    margin: 20px 0px;
 }
 
 .card__items {
     /* border: 2px solid black; */
-    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: .8rem;
+    margin: auto 0px;
 }
 
 .card__item {
@@ -131,9 +135,14 @@ li {
     height: 75%;
     color: #fff;
     background-color: black;
+    overflow: auto;
+    padding: 20px;
 }
 
 .cerrar_boton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     background: none;
     color: #fff;
     border: transparent;
@@ -257,10 +266,14 @@ li {
 
 /* Estilos aplicados para para el contenedor oculto PRECIOS MULTIMES LIBRE */
 .multimes__prices {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 30px;
-    gap: 1rem;
+
+    /*display: grid;*/
+    /*grid-template-columns: auto auto auto;*/
+    margin: 30px;
+    /*gap: 1rem;*/
+    display: flex;
+
+
 }
 
 .multimes__content {
@@ -298,6 +311,24 @@ li {
     font-family: 'Oswald-Light';
     font-size: 30px;
     list-style: none;
+}
+
+@media (max-width: 1190px ) {
+    .multimes__prices {
+        flex-direction: column;
+    }
+
+    .multimes__info {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-left: none;
+        border-bottom: 5px solid #D68A3E;
+    }
+
+    .multimes__info:last-child {
+        border: none;
+    }
+
 }
 
 

@@ -1,6 +1,6 @@
 @font-face {
     font-family: Guthen Bloots;
-    src: url("/Fuentes_tipograficas/Guthen\ Bloots\ Personal\ Use.ttf");
+    src: url("/Fuentes_tipograficas/Guthen-Bloots.ttf");
 }
 
 @font-face {
@@ -187,7 +187,6 @@ li {
     list-style: none;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
-    border: 1px solid white;
 }
 
 

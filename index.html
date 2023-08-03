@@ -402,9 +402,35 @@
             <div class="card">
                 <h2 class="card__title">Medios de Pago</h2>
                     <ul class="card__items">
-                        <li class="card__item ">Mercado Pago</li>
-                        <li class="card__item  ">Aplicacion Gimnasio</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('mercado_pago')">Mercado Pago</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('app__gym')">Aplicacion Gimnasio</li>
                     </ul>
+                
+                <!--Grupo Oculto. MEDIOS DE PAGO. APLICACION GIMNASIO -->
+                <div class="container_hide app__gym" style="display: none;">                            
+                    <div class="container_hide-info container__QR">
+                        <img src="/PNG/Aplicacion Gimnasio.jpeg" alt="Logo Pie de monte" class="container__imagen">
+                    </div>
+    
+                    <div class="multimes__content">                                  
+                        <h3 class="multimes__title">Aplicacion Gimnasio </h3> 
+                    </div>   
+                            
+                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                </div>
+
+                <!--Grupo Oculto. MEDIOS DE PAGO. MERCADO PAGO -->
+                <div class="container_hide mercado_pago" style="display: none;">                            
+                    <div class="container_hide-info container__QR">
+                        <img src="/PNG/Mercado Pago.jpg" alt="Logo Pie de monte" class="container__imagen">
+                    </div>
+    
+                    <div class="multimes__content">                                  
+                        <h3 class="multimes__title">Mercado Pago </h3> 
+                    </div>   
+                            
+                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                </div>
             </div>
         </div>  
     </main>

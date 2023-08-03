@@ -1,6 +1,6 @@
 @font-face {
     font-family: Guthen Bloots;
-    src: url("/Fuentes_tipograficas/Guthen-Bloots.ttf");
+    src: url("/Fuentes_tipograficas/Guthen\ Bloots\ Personal\ Use.ttf");
 }
 
 @font-face {
@@ -157,7 +157,7 @@ li {
     background: none;
     color: #fff;
     border: transparent;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -175,18 +175,18 @@ li {
 
 .container_hide-info-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .container_hide-info {
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
     text-align: left;
 }
 
 .container_hide-info-list {
     list-style: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -199,14 +199,14 @@ li {
     display: flex;
     justify-content: space-between;
     font-family: "Oswald-Heavy";
-    font-size: 25px;
+    font-size: 20px;
     padding: 0 100px;
 }
 
 .title_promo {
     text-align: center;
     font-family: "Guthen Bloots";
-    font-size: 100px;
+    font-size: 80px;
     letter-spacing: 3px;
     font-weight: 400;
 }
@@ -217,7 +217,7 @@ li {
 }
 
 .container_hide-promos > .container_hide-info:first-child {
-    margin-left: 100px;
+    margin-left: 50px;
     border-left: 5px solid #fff;
 }
 
@@ -322,6 +322,16 @@ li {
     list-style: none;
 }
 
+/* Estilos aplicados para para el contenedor oculto MEDIOS DE PAGO.  */
+.container__QR {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container__imagen {
+    height: 450px;
+}
 
 @media (max-width: 768px) {
     /* Estilos aplicados para dispositivos con un ancho máximo de 768px */
@@ -401,6 +411,5 @@ li {
     .second_row {
         display: flex;
         flex-direction: column;
-        margin-top: 90px;
     }
 }

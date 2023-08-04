@@ -18,9 +18,21 @@
                 <h2 class="card__title">Promos<br> del mes</h2>
                     <ul class="card__items">
                         <li><a class="card__item" href="https://www.getnet.com.ar/promociones-para-tus-clientes" target="_blank">Santander</a></li>
-                        <li class="card__item" onclick="mostrarInformacionOculta('info_promos')">Otros</li>
+                        <li class="card__item" onclick="mostrarInformacionOculta('info_promos')">Vigentes</li>
+                        <li class="card__item" onclick="mostrarInformacionOculta('nuevos_socios')">Nuevos Socios/Reinscripciones</li>
                     </ul>
-    
+
+                <!--Grupo Oculto. Otros-->
+                <div class="container_hide nuevos_socios" style="display: none;">
+                    <div class="container_hide-info imagen_container">
+                        <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                    </div>
+
+                    <div class="button">
+                        <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                    </div>
+                </div>
+                    
                 <!--Grupo Oculto. Otros-->
                 <div class="container_hide info_promos" style="display: none;">
                     <div class="container_hide-info imagen_container">
@@ -41,7 +53,7 @@
                             <h2 class="container_hide-info-title">Grupo</h2>
                             <ul class="container_hide-info-list">
                                 <li>2 personas -5%</li>
-                                <li>+3 personas -10%</li>
+                                <li>3 o + personas -10%</li>
                             </ul>
                         </div>
                             
@@ -54,9 +66,9 @@
                         </div>
         
                         <div class="container_hide-info">
-                            <h2 class="container_hide-info-title">Pago Contado</h2>
+                            <h2 class="container_hide-info-title">Pago Contado Efectivo</h2>
                             <ul class="container_hide-info-list">
-                                <li>Efectivo -5%</li>
+                                <li>- 5%</li>
                             </ul>
                         </div>
                     </div>
@@ -70,9 +82,9 @@
             <div class="card">
                 <h2 class="card__title">Servicios<br>para renovarte</h2>
                     <ul class="card__items">
-                        <li class="card__item ">Peluqueria</li>
-                        <li class="card__item ">Nutricion</li>
-                        <li class="card__item ">Cosmetologia y Cosmiatria</li>
+                        <li class="card__item ">Peluquería</li>
+                        <li class="card__item ">Nutrición</li>
+                        <li class="card__item ">Cosmetología y Cosmiatría</li>
                     </ul>
     
                 <!--Grupo Oculto. Servicios Peluqueria. TERMINAR DE COMPLETAR--> 
@@ -189,15 +201,15 @@
                         <li class="card__item accordion" onclick="mostrarInformacion('info_multimes')">Multimes</li>
                         <!--Grupo Oculto. Multimes-->
                         <ul class="accordion-content info_multimes" style="display: none;">
-                            <li onclick="mostrarInformacionOculta('info_multimes-libre')">Multimes Libre</li>
-                            <li onclick="mostrarInformacionOculta('info_multimes-estandar')">Multimes hasta 3 x semana</li>                                
+                            <li onclick="mostrarInformacionOculta('info_multimes-libre')">Pase Libre</li>
+                            <li onclick="mostrarInformacionOculta('info_multimes-estandar')">Hasta 3 x semana</li>                                
                         </ul>
     
                         <li class="card__item accordion" onclick="mostrarInformacion('info_mensual')">Mensual</li>
                         <!--Grupo Oculto. Mensual-->
                         <ul class="accordion-content info_mensual" style="display: none;">
-                            <li onclick="mostrarInformacionOculta('info_mensual-libre')">Mensual Libre</li>
-                            <li onclick="mostrarInformacionOculta('info_mensual-estandar')">Mensual hasta 3 x semana</li>
+                            <li onclick="mostrarInformacionOculta('info_mensual-libre')">Pase Libre</li>
+                            <li onclick="mostrarInformacionOculta('info_mensual-estandar')">Hasta 3 x semana</li>
                         </ul>
                             
                         <!--Acá iría el diario, semanal y quincenal-->
@@ -290,8 +302,8 @@
     
                     <div class="multimes__content">                                  
                         <h3 class="multimes__title">Mensual hasta 3 x semana</h3>
-                        <p class="multimes__paragraph">14 Clases al mes.</p>
-                        <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
+                        <p class="multimes__paragraph">14 Clases desde que contratas.</p>
+                        <p class="multimes__paragraph">Todas las actividades incluidas.</p>  
                     </div>
     
                     <div class="container_hide-row multimes__prices">                             
@@ -330,7 +342,7 @@
     
                     <div class="multimes__content">                                  
                         <h3 class="multimes__title">Mensual Libre</h3>
-                        <p class="multimes__paragraph">Incluida cualquier actividad: musculación y clases.</p>  
+                        <p class="multimes__paragraph">Todas las actividades incluidas.</p>  
                     </div>
     
                     <div class="container_hide-row multimes__prices">                             
@@ -400,10 +412,11 @@
     
             <!--Grupo Codigos-->
             <div class="card">
-                <h2 class="card__title">Medios de Pago</h2>
+                <h2 class="card__title">Qr's</h2>
                     <ul class="card__items">
-                        <li class="card__item " onclick="mostrarInformacionOculta('mercado_pago')">Mercado Pago</li>
-                        <li class="card__item " onclick="mostrarInformacionOculta('app__gym')">Aplicacion Gimnasio</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('mercado_pago')">MercadoPago</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('app__gym')">App Club</li>
+                        <li class="card__item ">Alias: PDMCLUB</li>
                     </ul>
                 
                 <!--Grupo Oculto. MEDIOS DE PAGO. APLICACION GIMNASIO -->
@@ -411,12 +424,13 @@
                     <div class="container_hide-info container__QR">
                         <img src="/PNG/Aplicacion Gimnasio.jpeg" alt="Logo Pie de monte" class="container__imagen">
                     </div>
-    
+
+                    <!--NO IRIA -->
                     <div class="multimes__content">                                  
                         <h3 class="multimes__title">Aplicacion Gimnasio </h3> 
                     </div>   
                             
-                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                    <button class="cerrar_boton" onclick="cerrarInformacion()" style="color: black;">X</button>
                 </div>
 
                 <!--Grupo Oculto. MEDIOS DE PAGO. MERCADO PAGO -->
@@ -424,12 +438,13 @@
                     <div class="container_hide-info container__QR">
                         <img src="/PNG/Mercado Pago.jpg" alt="Logo Pie de monte" class="container__imagen">
                     </div>
-    
+                    
+                    <!--NO IRIA -->
                     <div class="multimes__content">                                  
                         <h3 class="multimes__title">Mercado Pago </h3> 
                     </div>   
                             
-                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                    <button class="cerrar_boton" onclick="cerrarInformacion()" style="color: black;">X</button>
                 </div>
             </div>
         </div>  

@@ -128,7 +128,7 @@ li {
     color: black;
     transition: 0.4s ease-out;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 35px;
     padding: 10px 0;
     border-radius: 5px;
 }
@@ -214,6 +214,7 @@ li {
 .imagen_logo {
     height: 70px;
     width: auto;
+    padding-right: 10px;
 }
 
 .container_hide-promos > .container_hide-info:first-child {
@@ -245,7 +246,7 @@ li {
 .clases_title {
     font-family: "Guthen Bloots";
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1.2px;
     line-height: 0.9;
     
@@ -302,7 +303,7 @@ li {
     font-family: 'Oswald-Light';
     font-size: 50px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .multimes__info {
@@ -327,6 +328,7 @@ li {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .container__imagen {

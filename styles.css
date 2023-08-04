@@ -162,7 +162,7 @@ li {
     cursor: pointer;
 }
 
-/* Estilos aplicados para el contenedor oculto OTROS */
+/* Estilos aplicados para el contenedor oculto VIGENTES */
 .info_promos, .info_horarios-club {
     background-color: #518338;
 }
@@ -224,6 +224,16 @@ li {
 
 .container_hide-promos > .container_hide-info:nth-child(2) {
     border-right: 5px solid #fff;
+}
+/* Estilos aplicados para el contenedor oculto PELUQUERIA */
+
+.services__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.black {
+    background-color: rgba(88, 88, 88, 0.678);
 }
 
 /* Estilos aplicados para para el contenedor oculto CLUB */

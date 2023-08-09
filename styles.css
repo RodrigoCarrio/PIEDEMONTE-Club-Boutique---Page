@@ -38,12 +38,14 @@ li {
     padding: 1rem;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .first_row {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 50%;
+    
     gap: 1rem;
     padding-bottom: 1rem;
 }
@@ -51,7 +53,7 @@ li {
 .second_row {
     display: grid;
     grid-template-columns: 50% auto;
-    height: 50%;
+    
     gap: 1rem;
 }
 
@@ -128,7 +130,7 @@ li {
     color: black;
     transition: 0.4s ease-out;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 40px;
     padding: 10px 0;
     border-radius: 5px;
 }

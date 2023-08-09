@@ -347,7 +347,6 @@ li {
 
 .nose {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
     justify-content: space-around;
@@ -355,7 +354,7 @@ li {
 }
 
 .container__imagen-logo {
-
+    margin-left: 50px;
     max-width: 350px;
     height: auto;
 
@@ -451,5 +450,10 @@ li {
     .container__imagen {
         height: auto;
         max-width: 300px;
+
+    }
+
+    .nose {
+        flex-direction: column;
     }
 }

@@ -339,16 +339,23 @@ li {
 }
 
 /* Estilos aplicados para para el contenedor oculto MEDIOS DE PAGO.  */
-.container__QR {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+.mercado_pago, .app__gym {
     background-color: #fff;
 }
 
-.container__imagen {
-    height: 450px;
+.container__QR {
+
+    display: inline-flex;
 }
+.container__imagen-logo {
+    width: 400px;
+}
+
+.container__imagen {
+    height: 400px;
+}
+
+
 
 @media (max-width: 768px) {
     /* Estilos aplicados para dispositivos con un ancho máximo de 768px */

@@ -166,6 +166,32 @@ li {
     font-weight: 600;
     cursor: pointer;
 }
+/* Estilos aplicados para el contenedor oculto Nuevos socios/reinscripciones */
+.promo_efectivo {
+    background-color: #518338;
+}
+
+.promo_items {
+    margin-top: 10px;
+}
+
+.promo_efectivo h5 {
+    font-family: "Oswald-Heavy";
+    font-size: 25px;
+}
+
+.promo_items li {
+    font-family: "Oswald-Light";
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.promo_items p {
+    font-family: "Oswald-Light";
+    font-size: 40px;
+    line-height: 5;
+}
 
 /* Estilos aplicados para el contenedor oculto VIGENTES */
 .info_promos, .info_horarios-club {
@@ -243,8 +269,8 @@ li {
 .services__type p {
     text-align: center;
     font-size: 30px;
-    font-weight: 600;
-    color: goldenrod;
+    font-weight: 500;
+    color: #fff;
     font-family: Oswald-Light;
 }
 

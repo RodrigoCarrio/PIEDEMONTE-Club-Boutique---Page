@@ -82,41 +82,105 @@
             <div class="card">
                 <h2 class="card__title">Servicios<br>para renovarte</h2>
                     <ul class="card__items">
-                        <li class="card__item " onclick="mostrarInformacionOculta('services')">Peluquería</li>
-                        <li class="card__item ">Nutrición</li>
-                        <li class="card__item ">Cosmetología y Cosmiatría</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('peluqueria')">Peluquería</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('nutricion')">Nutrición</li>
+                        <li class="card__item " onclick="mostrarInformacionOculta('cosmiatria')">Cosmetología y Cosmiatría</li>
                     </ul>
     
-                <!--Grupo Oculto. Servicios Peluqueria. TERMINAR DE COMPLETAR--> 
-                <div class="container_hide services" style="display: none;">
+                <!--Grupo Oculto. Servicios Peluqueria. --> 
+                <div class="container_hide peluqueria" style="display: none;">
                     <div class="container_hide-info imagen_container">
                         <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
                     </div>
             
-                    <div class="container_hide-info services__type">
-                        <img src="" alt="Logo El Taller Peluqueria">
-                    </div>
-    
-                    <div class="container_hide-info">
-                        <h1>Peluqueria y Barbería</h1>
-                        <p>Ezequiel Buscaglia</p>
-                        <p>11 33160745</p>
+                    <div class="container__services">
+                        <div class="services__type">
+                            <img src="/PNG/eltaller.png" alt="Logo El Taller Peluqueria">
+                            <p>Ezequiel Buscaglia</p>
+                            <p>11 33160745</p>
+                        </div>
+        
+                        <div class="items">
+                            <ul class="services__items">
+                                <li class="services__item black">Corte hombre/mujer<span>$1000</span></li>
+                                <li class="services__item gray">Lavado + brushing <span>$1000</span></li>
+                                <li class="services__item black">Sólo barba <span>$1000</span></li>
+                                <li class="services__item gray">Corte y barba <span>$1000</span></li>
+                                <li class="services__item black">Nutrición <span>$1000</span></li>
+                                <li class="services__item gray">Corte y nutrición <span>$1000</span></li>
+                                <li class="services__item black">Color raíz <span>$1000</span></li>
+                                <li class="services__item gray">Botox keratina <span>$1000</span></li>
+                                <li class="services__item black">Alisado <span>$1000</span></li>
+                                <li class="services__item gray">Balayage <span>$1000</span></li>
+                                <li class="services__item black">Reflejos <span>$1000</span></li>
+                            </ul>
+                        </div>
                     </div>
                     
-                    <div class="items">
-                        <ul class="services__items">
-                            <li class="services__item black">Corte hombre/mujer<span>$1000</span></li>
-                            <li class="services__item gray">Lavado + brushing <span>$1000</span></li>
-                            <li class="services__item black">Sólo barba <span>$1000</span></li>
-                            <li class="services__item gray">Corte y barba <span>$1000</span></li>
-                            <li class="services__item black">Nutrición <span>$1000</span></li>
-                            <li class="services__item gray">Corte y nutrición <span>$1000</span></li>
-                            <li class="services__item black">Color raíz <span>$1000</span></li>
-                            <li class="services__item gray">Botox keratina <span>$1000</span></li>
-                            <li class="services__item black">Alisado <span>$1000</span></li>
-                            <li class="services__item gray">Balayage <span>$1000</span></li>
-                            <li class="services__item black">Reflejos <span>$1000</span></li>
-                        </ul>
+                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                </div>
+
+                <!--Grupo Oculto. Servicios Nutricion. --> 
+                <div class="container_hide nutricion" style="display: none;">
+                    <div class="container_hide-info imagen_container">
+                        <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                    </div>
+            
+                    <div class="container__services">
+                        <div class="services__type">
+                            <img src="/PNG/nutri.png" alt="Logo El Taller Peluqueria">
+                            <p>Lic. Sosa Agustina</p>
+                            <p>María - MP N4572</p>
+                            <p>3541 694449</p>
+                        </div>
+        
+                        <div class="items">
+                            <ul class="services__items">
+                                <li class="services__item black">Primera consulta<span>$1000</span></li>
+                                <li class="services__item gray">Lavado + brushing <span>$1000</span></li>
+                                <li class="services__item black">Sólo barba <span>$1000</span></li>
+                                <li class="services__item gray">Corte y barba <span>$1000</span></li>
+                                <li class="services__item black">Nutrición <span>$1000</span></li>
+                                <li class="services__item gray">Corte y nutrición <span>$1000</span></li>
+                                <li class="services__item black">Color raíz <span>$1000</span></li>
+                                <li class="services__item gray">Botox keratina <span>$1000</span></li>
+                                <li class="services__item black">Alisado <span>$1000</span></li>
+                                <li class="services__item gray">Balayage <span>$1000</span></li>
+                                <li class="services__item black">Reflejos <span>$1000</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>
+                </div>
+
+                <!--Grupo Oculto. Servicios Cosmiatria. --> 
+                <div class="container_hide cosmiatria" style="display: none;">
+                    <div class="container_hide-info imagen_container">
+                        <img src="/PNG/logo-blanco.png" alt="Logo Pie de monte" class="imagen_logo">
+                    </div>
+            
+                    <div class="container__services">
+                        <div class="services__type">
+                            <img src="/PNG/altair.png" alt="Logo El Taller Peluqueria">
+                            <p>Virginia Avancini</p>
+                            <p>3541 649911</p>
+                        </div>
+        
+                        <div class="items">
+                            <ul class="services__items">
+                                <li class="services__item black">Limpieza facial profunda<span>$1000</span></li>
+                                <li class="services__item gray">Tratamientos específicos <span>$1000</span></li>
+                                <li class="services__item black">T. Rosácea<span>$1000</span></li>
+                                <li class="services__item gray">T. Despigmentante <span>$1000</span></li>
+                                <li class="services__item black">T. para Acné <span>$1000</span></li>
+                                <li class="services__item gray">T. Anti-age <span>$1000</span></li>
+                                <li class="services__item black">Manicuría <span>$1000</span></li>
+                                <li class="services__item gray">Esmaltado semi <span>$1000</span></li>
+                                <li class="services__item black">Esculpidas <span>$1000</span></li>
+                                <li class="services__item gray">Cejas: diseño y perfilado <span>$1000</span></li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <button class="cerrar_boton" onclick="cerrarInformacion()">X</button>

@@ -231,12 +231,37 @@ li {
     border-right: 5px solid #fff;
 }
 /* Estilos aplicados para el contenedor oculto PELUQUERIA */
+.container__services {
+    display: flex;
+    padding: 20px;
+}
+
+.services__type img {
+    height: 250px;
+}
+
+.services__type p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: goldenrod;
+    font-family: Oswald-Light;
+}
+
+.items {
+    width: 100%;
+    padding-left: 40px;
+}
 
 .services__item {
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
+    font-size: 25px;
+    font-family: Oswald-Light;
+    letter-spacing: 2px;
 }
+
 .black {
     background-color: rgba(88, 88, 88, 0.678);
 }

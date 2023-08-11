@@ -372,6 +372,12 @@ li {
     line-height: 1.1;
 }
 
+.estandar__paragraph {
+    font-family: 'Oswald-Light';
+    font-size: 30px;
+
+}
+
 .multimes__info {
     border-left: 5px solid #D68A3E;
     padding-left: 1rem;
@@ -388,6 +394,12 @@ li {
     font-size: 30px;
     list-style: none;
 }
+
+.multimes__info-price {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 
 /* Estilos aplicados para para el contenedor oculto MEDIOS DE PAGO.  */
 .mercado_pago, .app__gym {
